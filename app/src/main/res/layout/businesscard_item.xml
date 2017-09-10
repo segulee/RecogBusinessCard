@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/card_vertical_margin"
+    android:layout_marginLeft="@dimen/card_horizontal_margin"
+    android:layout_marginRight="@dimen/card_horizontal_margin"
+    android:layout_marginTop="@dimen/card_vertical_margin">
+
+    <ImageView
+        android:id="@+id/faceImageView"
+        android:layout_width="140dp"
+        android:layout_height="160dp"
+        android:layout_marginRight="@dimen/card_horizontal_margin" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="7dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/card_vertical_margin"
+                android:layout_marginTop="@dimen/card_vertical_margin"
+                android:text="i_have_name"
+                android:textStyle="bold"
+                android:letterSpacing="0.2"
+                android:id="@+id/nameTextView"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/card_vertical_margin"
+                android:text="nameEng"
+                android:id="@+id/nameEngTextView"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/companyTextView"
+                style="@style/card_item_property"
+                android:layout_marginRight="@dimen/card_small_horizontal_margin"
+                android:layout_marginTop="15dp"
+                android:text="multimedia" />
+
+            <TextView
+                style="@style/card_item_property"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="@dimen/card_small_horizontal_margin"
+                android:text="/" />
+
+            <TextView
+                android:id="@+id/nicknameTextView"
+                android:layout_marginTop="15dp"
+                style="@style/card_item_property"
+                android:text="nickname" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/card_item_property"
+            android:id="@+id/contactTextView"
+            android:layout_marginTop="7dp"
+            android:text="010 3775 1847" />
+
+        <TextView
+            style="@style/card_item_property"
+            android:id="@+id/emailTextView"
+            android:text="example1234@mailadress.com" />
+
+        <TextView
+            style="@style/card_item_property"
+            android:id="@+id/addressTextView"
+            android:text="경기도 용인시 기흥구 영통동 49" />
+
+
+    </LinearLayout>
+</LinearLayout>

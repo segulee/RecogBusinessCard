@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/fragment_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_vertical_margin"
+            android:layout_marginLeft="@dimen/card_horizontal_margin"
+            android:layout_marginRight="@dimen/card_horizontal_margin"
+            android:layout_marginTop="@dimen/card_vertical_margin">
+
+            <ImageView
+                android:id="@+id/_faceImageView"
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp" />
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="7dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/_nameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/card_vertical_margin"
+                        android:layout_marginTop="@dimen/card_vertical_margin"
+                        android:letterSpacing="0.2"
+                        android:text="i_have_name"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/_nameEngTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/card_vertical_margin"
+                        android:text="nameEng"
+                        android:textSize="13dp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/_companyTextView"
+                        style="@style/card_property"
+                        android:layout_marginRight="3dp"
+                        android:text="multimedia" />
+
+                    <TextView
+                        style="@style/card_property"
+                        android:layout_marginRight="3dp"
+                        android:text="/" />
+
+                    <TextView
+                        android:id="@+id/_nicknameTextView"
+                        style="@style/card_property"
+                        android:text="nickname" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/_contactTextView"
+                    style="@style/card_property"
+                    android:layout_marginTop="10dp"
+                    android:text="010 3775 1847" />
+
+                <TextView
+                    android:id="@+id/_emailTextView"
+                    style="@style/card_property"
+                    android:text="example1234@mailadress.com"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/_addressTextView"
+                    style="@style/card_property"
+                    android:text="example1234@mailadress.com" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

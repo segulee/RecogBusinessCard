@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Main"
+    tools:context="com.new9.recogbusinesscard.Activity.RecogActivity">
+        <org.opencv.android.JavaCameraView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/activity_surface_view" />
+    <Button
+        android:id="@+id/kimchi"
+        android:text="초점이 맞춰지면 버튼을 눌러주세요."
+        android:textColor="@color/theme_window_background"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:background="@color/blue_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

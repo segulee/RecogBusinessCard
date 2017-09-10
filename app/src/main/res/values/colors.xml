@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="theme_window_background">#FFF5F5F5</color>
+    <color name="colorMint">#6EE8AE</color>
+    <color name="colorMint_d">#91E7BE</color>
+    <color name="colorMint_dd">#E8EAE9</color>
+    <color name="blue_primary">#2196F3</color>
+    <color name="blue_light">#6FBFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue_grey">#6A6B78</color>
+</resources>

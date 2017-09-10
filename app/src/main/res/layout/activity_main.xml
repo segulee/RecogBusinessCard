@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Main"
+    tools:context="com.new9.recogbusinesscard.Activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme_window_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/login_horizontal_margin"
+            android:layout_marginTop="@dimen/login_horizontal_margin"
+            android:text="내 명함"
+            android:textColor="@color/blue_primary"
+            android:textSize="14dp" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginLeft="@dimen/login_horizontal_margin"
+            android:layout_marginRight="@dimen/login_horizontal_margin"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="2dp">
+
+            <LinearLayout
+                android:id="@+id/loginNeedLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/sample"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="onLoginRequireClicked"
+                    android:text="@string/require_login"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue_primary"
+                    android:textSize="15dp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:id="@+id/myCardLayout"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <include
+                    android:id="@+id/myBusinessCard"
+                    layout="@layout/businesscard_item" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/login_horizontal_margin"
+            android:layout_marginTop="@dimen/login_horizontal_margin"
+            android:text="등록된 명함"
+            android:textColor="@color/blue_primary"
+            android:textSize="14dp" />
+
+        <com.bartoszlipinski.flippablestackview.FlippableStackView
+            android:id="@+id/flippable_stack_view"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginTop="2dp"
+            android:elevation="3dp"></com.bartoszlipinski.flippablestackview.FlippableStackView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="위아래로 움직여보세요!"
+            android:textColor="@color/cardview_shadow_start_color"
+            android:textSize="13dp"
+            android:textStyle="italic" />
+
+
+        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/samples_fab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_plus" />
+
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+
+</LinearLayout>

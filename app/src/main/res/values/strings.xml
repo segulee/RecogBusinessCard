@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">RecogBusinessCard</string>
+    <string name="title_activity_login">로그인</string>
+    <!-- Strings related to login -->
+    <string name="prompt_id">아이디</string>
+    <string name="prompt_password">비밀번호</string>
+    <string name="action_sign_in">로그인/가입</string>
+    <string name="action_sign_in_short">회원가입</string>
+    <string name="action_log_in">로그인</string>
+    <string name="error_invalid_email">아이디를 확인해 주세요!</string>
+    <string name="error_invalid_password">패스워드가 너무 짧습니다.</string>
+    <string name="error_incorrect_password">패스워드가 올바르지 않습니다.</string>
+    <string name="error_field_required">아이디는 공백일 수 없습니다.</string>
+    <string name="permission_rationale">"아이디 자동완성을 위해서 주소록 접근권한이 필요합니다."</string>
+    <string name="require_login">로그인이 필요한 서비스 입니다.\n<u>로그인 하시겠습니까?</u></string>
+    <string name="require_card">명함을 등록해보세요!</string>
+    <string name="title_activity_registercard">RegistercardActivity</string>
+    <string name="already_signup"><u>이미 가입되어있습니까?</u></string>
+    <string name="first_time_ques"><u>처음이신가요?</u></string>
+
+    <!--Strings related to register-->
+    <string name="name_error">이름은 공백일 수 없습니다.</string>
+    <string name="company_error">회사/소속은 공백일 수 없습니다.</string>
+    <string name="email_error">이메일은 공백일 수 없습니다.</string>
+    <string name="phone_error">번호는 공백일 수 없습니다.</string>
+</resources>
